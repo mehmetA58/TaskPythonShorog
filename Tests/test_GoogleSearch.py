@@ -1,3 +1,5 @@
+import csv
+import time
 
 from selenium.webdriver.common.keys import Keys
 
@@ -15,8 +17,12 @@ class Test_GoogleSearch(BaseTest):
         assert flag
         title = self.googlePage.get_title(TestData.GOOGLE_PAGE_TITLE)
         assert title == TestData.GOOGLE_PAGE_TITLE
-        self.googlePage.do_search_a_text_on_google(TestData.TEXT_DATA+Keys.ENTER)
-        self.googlePage.do_csv_Write()
-        #self.googlePage.assertSearchText(TestData.TEXT_DATA)
-
-
+        with open("C:\\Users\\PC\\IdeaProjects\\TaskPython\\TestData\\TestData.csv", 'r') as file:
+            csvreader = csv.reader(file)
+            for row in csvreader:
+                print(row)
+                self.googlePage.do_search_a_text_on_google(row[0] + Keys.ENTER)
+                time.sleep(3)
+                assert row[0] in self.googlePage.GET_TITLE()
+                self.googlePage.do_csv_Write()
+                self.googlePage.navigateBack()

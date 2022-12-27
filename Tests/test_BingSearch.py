@@ -1,3 +1,6 @@
+import csv
+import time
+
 from Config.config import TestData
 from Pages.BingPage import BingPage
 from Tests.test_base import BaseTest
@@ -12,6 +15,13 @@ class Test_BingSearch(BaseTest):
         assert flag
         title = self.bingPage.get_title(TestData.BING_PAGE_TITLE)
         assert title == TestData.BING_PAGE_TITLE
-        self.bingPage.do_search_a_text_on_bing(TestData.TEXT_DATA + Keys.ENTER)
-        self.bingPage.do_csv_Write()
-        #self.bingPage.assertSearchText()
+        with open("C:\\Users\\PC\\IdeaProjects\\TaskPython\\TestData\\TestData.csv", 'r') as file:
+            csvreader = csv.reader(file)
+            for row in csvreader:
+                print(row)
+                self.bingPage.do_search_a_text_on_bing(row[0] + Keys.ENTER)
+                time.sleep(3)
+                assert row[0] in self.bingPage.GET_TITLE()
+                self.bingPage.do_csv_Write()
+                self.bingPage.navigateBack()
+

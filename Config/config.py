@@ -10,5 +10,3 @@ class TestData:
     GOOGLE_PAGE_TITLE = "Google"
     YAHOO_PAGE_TITLE = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos"
     BING_PAGE_TITLE = "Bing"
-
-    TEXT_DATA="Kivi"

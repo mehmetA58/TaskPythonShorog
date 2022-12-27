@@ -35,3 +35,10 @@ class BasePage:
             file.write(self.driver.title + "-->" + element.text)
 
             file.close()
+
+    def navigateBack(self):
+        self.driver.back()
+
+    def GET_TITLE(self):
+        var = self.driver.title
+        return var

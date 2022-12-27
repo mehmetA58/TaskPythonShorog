@@ -1,3 +1,6 @@
+import csv
+import time
+
 import pytest
 from selenium.webdriver import Keys
 
@@ -14,6 +17,12 @@ class Test_YahooSearch(BaseTest):
         assert flag
         title = self.yahopage.get_title(TestData.YAHOO_PAGE_TITLE)
         assert title == TestData.YAHOO_PAGE_TITLE
-        self.yahopage.do_search_a_text_on_yahoo(TestData.TEXT_DATA + Keys.ENTER)
-        self.yahopage.do_csv_Write()
-        #self.yahopage.assertSearchText(TestData.TEXT_DATA)
+        with open("C:\\Users\\PC\\IdeaProjects\\TaskPython\\TestData\\TestData.csv", 'r') as file:
+            csvreader = csv.reader(file)
+            for row in csvreader:
+                print(row)
+                self.yahopage.do_search_a_text_on_yahoo(row[0] + Keys.ENTER)
+                time.sleep(3)
+                assert row[0] in self.yahopage.GET_TITLE()
+                self.yahopage.do_csv_Write()
+                self.yahopage.navigateBack()
