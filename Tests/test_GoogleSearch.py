@@ -1,5 +1,7 @@
 
 from selenium.webdriver.common.keys import Keys
+
+from Pages import BasePage
 from Pages.GooglePage import GooglePage
 from Tests.test_base import BaseTest
 from Config.config import TestData
@@ -15,5 +17,6 @@ class Test_GoogleSearch(BaseTest):
         assert title == TestData.GOOGLE_PAGE_TITLE
         self.googlePage.do_search_a_text_on_google(TestData.TEXT_DATA+Keys.ENTER)
         self.googlePage.do_csv_Write()
+        #self.googlePage.assertSearchText(TestData.TEXT_DATA)
 
 

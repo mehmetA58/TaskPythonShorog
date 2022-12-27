@@ -23,3 +23,9 @@ class BingPage(BasePage):
 
     def do_csv_Write(self):
         self.csvWrite(self.RESULT_STATUS)
+
+    def assertSearchText(self,text):
+        report=self.get_element_text(self.RESULT_STATUS)
+        print(self.get_element_text(self.RESULT_STATUS))
+        assert self.get_element_text(text) in report
+        print("Test PASS")

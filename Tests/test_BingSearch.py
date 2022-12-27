@@ -14,3 +14,4 @@ class Test_BingSearch(BaseTest):
         assert title == TestData.BING_PAGE_TITLE
         self.bingPage.do_search_a_text_on_bing(TestData.TEXT_DATA + Keys.ENTER)
         self.bingPage.do_csv_Write()
+        #self.bingPage.assertSearchText()

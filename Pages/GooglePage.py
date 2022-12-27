@@ -1,3 +1,5 @@
+from _csv import reader
+
 from selenium.webdriver.common.by import By
 from Config.config import TestData
 from Pages.BasePage import BasePage
@@ -21,8 +23,11 @@ class GooglePage(BasePage):
     def do_search_a_text_on_google(self,text):
         self.do_send_keys(self.SEARCH_BOX,text)
 
-    def get_result_amount(self):
-        self.get_element_text(self.RESULT_STATUS)
-
     def do_csv_Write(self):
         self.csvWrite(self.RESULT_STATUS)
+
+    def assertSearchText(self,text):
+        report=self.get_element_text(self.RESULT_STATUS)
+        assert self.get_element_text(text) in report
+        print("Test PASS")
+

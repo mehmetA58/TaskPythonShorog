@@ -2,6 +2,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
+import os
 
 
 class BasePage:
@@ -34,13 +35,3 @@ class BasePage:
             file.write(self.driver.title + "-->" + element.text)
 
             file.close()
-
-    def read_data_from_csv(self, filename,by_locator):
-        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
-        with open('TestData.csv','r') as csv_file:
-            csv_reader=csv.reader(csv_file)
-
-            for line in csv_reader:
-                element.send_keys(line[0])
-
-

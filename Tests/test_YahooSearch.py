@@ -16,3 +16,4 @@ class Test_YahooSearch(BaseTest):
         assert title == TestData.YAHOO_PAGE_TITLE
         self.yahopage.do_search_a_text_on_yahoo(TestData.TEXT_DATA + Keys.ENTER)
         self.yahopage.do_csv_Write()
+        #self.yahopage.assertSearchText(TestData.TEXT_DATA)
