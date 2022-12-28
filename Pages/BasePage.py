@@ -32,7 +32,7 @@ class BasePage:
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
 
         with open('search_output.csv', 'w') as file:
-            file.write(self.driver.title + "-->" + element.text)
+            file.write(self.driver.title + " --> " + element.text+"\n")
 
             file.close()
 

@@ -1,6 +1,6 @@
 import csv
 import time
-
+from base.logger import customLogger
 from Config.config import TestData
 from Pages.BingPage import BingPage
 from Tests.test_base import BaseTest
@@ -8,11 +8,14 @@ from selenium.webdriver.common.keys import Keys
 
 
 class Test_BingSearch(BaseTest):
+    log = customLogger()
 
     def test_visible_bing_page(self):
         self.bingPage = BingPage(self.driver)
+        self.log.info("*****'LOGIN' BING TESTS *****\n")
         flag = self.bingPage.is_bing_logo_isDisplayed()
         assert flag
+        self.log.info("Google big logo is displayed\n")
         title = self.bingPage.get_title(TestData.BING_PAGE_TITLE)
         assert title == TestData.BING_PAGE_TITLE
         with open("C:\\Users\\PC\\IdeaProjects\\TaskPython\\TestData\\TestData.csv", 'r') as file:
@@ -24,4 +27,5 @@ class Test_BingSearch(BaseTest):
                 assert row[0] in self.bingPage.GET_TITLE()
                 self.bingPage.do_csv_Write()
                 self.bingPage.navigateBack()
+        self.log.info("*****'CLOSE' BING TESTS *****\n")
 
