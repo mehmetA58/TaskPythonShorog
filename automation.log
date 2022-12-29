@@ -79,3 +79,76 @@
 
 12/28/2022 05:22:51 PM - Test_YahooSearch - INFO: *****'CLOSE' YAHOO TESTS *****
 
+12/29/2022 01:10:38 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:10:43 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:10:43 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:10:43 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:10:43 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:11:03 PM - Test_GoogleSearch - INFO: Elma with contains Elma - Google'da Ara 
+ 
+12/29/2022 01:11:13 PM - Test_YahooSearch - INFO: *****'LOGIN' YAHOO TESTS *****
+
+12/29/2022 01:11:13 PM - Test_YahooSearch - INFO: Yahoo big logo is displayed
+
+12/29/2022 01:11:17 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
+12/29/2022 01:11:19 PM - Test_YahooSearch - INFO: Elmawith contains Elma - Yahoo Search Results
+
+12/29/2022 01:11:20 PM - Test_GoogleSearch - INFO: Armut with contains Armut - Google'da Ara 
+ 
+12/29/2022 01:11:27 PM - Test_GoogleSearch - INFO: Turkey with contains Turkey - Google'da Ara 
+ 
+12/29/2022 01:11:28 PM - Test_GoogleSearch - INFO: *****'CLOSE' GOOGLE TESTS *****
+
+12/29/2022 01:11:37 PM - Test_YahooSearch - INFO: Armutwith contains Armut - Yahoo Search Results
+
+12/29/2022 01:12:02 PM - Test_YahooSearch - INFO: Turkeywith contains Turkey - Yahoo Search Results
+
+12/29/2022 01:12:13 PM - Test_YahooSearch - INFO: *****'CLOSE' YAHOO TESTS *****
+
+12/29/2022 01:34:40 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:34:42 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:34:42 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:34:42 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:34:43 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:35:05 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
+12/29/2022 01:35:09 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:35:10 PM - Test_GoogleSearch - INFO: *****'CLOSE' GOOGLE TESTS *****
+
+12/29/2022 01:35:15 PM - Test_YahooSearch - INFO: *****'LOGIN' YAHOO TESTS *****
+
+12/29/2022 01:35:16 PM - Test_YahooSearch - INFO: Yahoo big logo is displayed
+
+12/29/2022 01:35:50 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:35:55 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:35:56 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:35:56 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:35:56 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:36:05 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
+12/29/2022 01:36:07 PM - Test_YahooSearch - INFO: *****'LOGIN' YAHOO TESTS *****
+
+12/29/2022 01:36:07 PM - Test_YahooSearch - INFO: Yahoo big logo is displayed
+
+12/29/2022 01:36:11 PM - Test_YahooSearch - INFO: Pythonwith contains Python - Yahoo Search Results
+
+12/29/2022 01:36:13 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:36:14 PM - Test_GoogleSearch - INFO: *****'CLOSE' GOOGLE TESTS *****
+
+12/29/2022 01:36:19 PM - Test_YahooSearch - INFO: *****'CLOSE' YAHOO TESTS *****
+

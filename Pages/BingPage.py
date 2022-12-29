@@ -6,7 +6,7 @@ from Pages.BasePage import BasePage
 class BingPage(BasePage):
     LOGO = (By.CSS_SELECTOR, "#bLogo")
     SEARCH_BOX = (By.XPATH, "//input[@id='sb_form_q']")
-    RESULT_STATUS = (By.XPATH, "//span[@class='sb_count']")
+    RESULT_STATUS = (By.XPATH, "(//h2[1]//a)[1]")
 
     def __init__(self, driver):
         super().__init__(driver)

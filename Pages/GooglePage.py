@@ -12,6 +12,7 @@ class GooglePage(BasePage):
     SEARCH_BOX = (By.NAME, "q")
     GOOGLE_BIG_LOGO = (By.XPATH, "//img[@alt='Google']")
     RESULT_STATUS = (By.XPATH, "//div[@id='result-stats']")
+    NAME_OF_FIRST_RESULT=(By.XPATH,"//h3[1]")
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -28,9 +29,9 @@ class GooglePage(BasePage):
         self.do_send_keys(self.SEARCH_BOX, text)
 
     def do_csv_Write(self):
-        self.csvWrite(self.RESULT_STATUS)
+        self.csvWrite(self.NAME_OF_FIRST_RESULT)
 
     def assertSearchText(self, text):
-        report = self.get_element_text(self.RESULT_STATUS)
+        report = self.get_element_text(self.NAME_OF_FIRST_RESULT)
         assert self.get_element_text(text) in report
         print("Test PASS")

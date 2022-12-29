@@ -7,7 +7,7 @@ from Pages.BasePage import BasePage
 class YahooPage(BasePage):
     SEARCH_BOX = (By.CSS_SELECTOR, "#ybar-sbq")
     LOGO = (By.XPATH, "//a[@id='ybar-logo']")
-    RESULT_STATUS = (By.XPATH, "//h2[@class='title mb-0']")
+    RESULT_STATUS = (By.XPATH, "(//h3[@class='title']//a)[2]")
 
     def __init__(self, driver):
         super().__init__(driver)
