@@ -1,0 +1,56 @@
+12/29/2022 01:19:28 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:19:28 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:19:29 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:19:38 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:21:45 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:21:45 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:21:45 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:21:54 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:22:47 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:22:47 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:22:47 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:22:57 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:24:37 PM - GooglePage - INFO: --- RUNNING TEST : https://www.google.com/ ---
+12/29/2022 01:24:37 PM - Test_GoogleSearch - INFO: *****'LOGIN' GOOGLE TESTS *****
+
+12/29/2022 01:24:38 PM - Test_GoogleSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:24:46 PM - Test_GoogleSearch - INFO: Python with contains Python - Google'da Ara 
+ 
+12/29/2022 01:24:46 PM - Test_GoogleSearch - INFO: *****'CLOSE' GOOGLE TESTS *****
+
+12/29/2022 01:25:41 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:25:42 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:25:48 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
+12/29/2022 01:29:06 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:29:07 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:29:14 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
+12/29/2022 01:33:23 PM - Test_YahooSearch - INFO: *****'LOGIN' YAHOO TESTS *****
+
+12/29/2022 01:33:23 PM - Test_YahooSearch - INFO: Yahoo big logo is displayed
+
+12/29/2022 01:33:27 PM - Test_YahooSearch - INFO: Pythonwith contains Python - Yahoo Search Results
+
+12/29/2022 01:33:33 PM - Test_YahooSearch - INFO: *****'CLOSE' YAHOO TESTS *****
+
+12/29/2022 01:37:26 PM - Test_BingSearch - INFO: *****'LOGIN' BING TESTS *****
+
+12/29/2022 01:37:28 PM - Test_BingSearch - INFO: Google big logo is displayed
+
+12/29/2022 01:37:33 PM - Test_BingSearch - INFO: *****'CLOSE' BING TESTS *****
+
